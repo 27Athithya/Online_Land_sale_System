@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-popup {
+    background-color: #fff;
+    padding: 25px;
+    width: 400px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.4s ease-in-out;
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.profile-popup:hover {
+    transform: scale(1.02); /* Slight scale-up effect on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: 600; /* Bolder for clearer visibility */
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #4caf50; /* Green border on focus */
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.3); /* Subtle shadow on focus */
+}
+
+/* Button Styles */
+button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Button transition */
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Done Button */
+#done_button {
+    background-color: #2196f3; /* Blue color for Done */
+}
+
+#done_button:hover {
+    background-color: #1e88e5;
+}
+
+/* Delete Button */
+#delete_button {
+    background-color: #f44336;
+    float: left;
+    margin-right: 10px;
+}
+
+#delete_button:hover {
+    background-color: #e53935;
+}
+
+/* Logout Button */
+#logout_button {
+    background-color: #ff9800;
+    float: right;
+}
+
+#logout_button:hover {
+    background-color: #fb8c00;
+}
+
+/* Password Section */
+#password_section {
+    display: none;
+}
+
+/* Edit Button */
+#edit_button {
+    background-color: #ffeb3b; /* Yellow color for Edit */
+    color: black;
+}
+
+#edit_button:hover {
+    background-color: #fdd835;
+}
+
+/* Hover effects for inputs */
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    border-color: #3f51b5; /* Blue hover border */
+    box-shadow: 0px 0px 5px rgba(63, 81, 181, 0.3); /* Subtle shadow on hover */
+}
+
+/* Disabled button */
+button:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
